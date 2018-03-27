@@ -124,6 +124,14 @@ void loop() {
     modem.print(msg);
     int err = modem.endPacket(true);
     delay(1000);
+    modem.beginPacket();
+    modem.print(msg);
+    err = modem.endPacket(true);
+    delay(1000);
+    modem.beginPacket();
+    modem.print(msg);
+    err = modem.endPacket(true);
+    delay(1000);
   }
 
   /* When car has left*/
@@ -145,6 +153,14 @@ void loop() {
     modem.beginPacket();
     modem.print(msg);
     int err = modem.endPacket(true);
+    delay(1000);
+    modem.beginPacket();
+    modem.print(msg);
+    err = modem.endPacket(true);
+    delay(1000);
+    modem.beginPacket();
+    modem.print(msg);
+    err = modem.endPacket(true);
     delay(1000);
   }
 }
